@@ -16,6 +16,9 @@ class Doggo {
 
 constructor(){
     this.apiUrl = 'https://dog.ceo/api/';
+    this.imgEl = document.querySelector('.featured-dogs img'); 
+    
+    this.init();
 }
 
 listBreeds(){
@@ -33,15 +36,25 @@ getRandomImage(){
 }
 
 getRandomImageByBreed(breed){
-    return fetch(`${this.apiUrl}/breeds/${breed}/images/random`)
+    return fetch(`${this.apiUrl}/breed/${breed}/images/random`)
     .then(resp => resp.json())
     .then(data =>  data.message);
 }
 
+init(){
+    this.getRandomImage()
+        .then(src => this.imgEl.setAttribute('src', src));
+
+    this.listBreeds()
+        .then(breeds => console.log(breeds));
 
 }
+    
+}
 
-
+document.addEventListener('DOMContentLoaded', ()=>{
+    new Doggo
+})
 
 // const img = document.querySelector('img')
 
