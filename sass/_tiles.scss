@@ -4,9 +4,36 @@
   margin: 0 $main-spacing * -1;
 
   .tiles__tile {
-    flex: 0 1 33.3%;
+    flex: 0 1 20%;
     padding: 0 $main-spacing;
     margin-bottom: $main-spacing / 2;
+  }
+
+  @media (max-width: 1600px){
+    .tiles__tile {
+      flex: 0 1 24%;
+      margin: 10px auto;  
+    }
+  }
+
+  @media (max-width: 1200px){
+    .tiles__tile {
+      flex: 0 1 32%;
+      margin: 10px auto;  
+    }
+  }
+
+  @media (max-width: 800px){
+    .tiles__tile {
+      flex: 0 1 45%;
+
+    }
+  }
+
+  @media (max-width: 600px){
+    .tiles__tile {
+      flex: 0 1 90%;
+    }
   }
 
   .tiles__tile-content {

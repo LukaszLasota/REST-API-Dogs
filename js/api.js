@@ -95,9 +95,8 @@ class Doggo {
                 }
             });
     }
-
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-        new Doggo();
-    });
+    new Doggo();
+});

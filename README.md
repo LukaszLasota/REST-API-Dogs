@@ -1,26 +1,42 @@
 # Rest API Dog
 
-
+Application showing photos of dogs of different breeds downloaded using Rest API
 
 ===
 
 ## Table of contents
-* [Local setup](#Local-setup)
-* [Production-build](#Production-build)
+* [How to run the app](#How-to-run-the-app)
 * [Technologies](#technologies)
+* [Source](#source)
 
 
-## Local setup
+## How to run the app
 
+1\. Clone the repository:
 
-## Production build
+```
+git clone https://github.com/LukaszLasota/REST-API-Dogs
+```
 
+2\. Install the dependencies:
+
+```
+npm install
+```
+
+3\. Run dev server
+
+```
+npm start
+```
 
 ## Technologies
 Project is created with:
 * Webpack 
 * HTML 5
-* CSS 3
-* SCSS
+* CSS 3/SCSS
 * JavaScript ES 6
+* Rest API
 
+## Source
+This app is inspired by javascript tutorial (https://websamuraj.pl/kurs/programowanie-w-javascript/ )
