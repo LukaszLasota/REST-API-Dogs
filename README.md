@@ -39,4 +39,4 @@ Project is created with:
 * Rest API
 
 ## Source
-This app is inspired by javascript tutorial (https://websamuraj.pl/kurs/programowanie-w-javascript/ )
+This app is inspired by javascript tutorial (https://www.udemy.com/course/zaawansowane-projekty-w-css-i-javascript)
